@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s_7m7##qo$-hh$59#^n5n$8z2t!f3lm*0-+1w3a7-25ixorg)i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['quotesapp-back.herokuapp.com']
 
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOWED_ORIGINS = ["http://localhost:63342"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:63342", "https://quotesapp-front.herokuapp.com/"]
 
 ROOT_URLCONF = 'quotes.urls'
 
